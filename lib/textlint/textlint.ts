@@ -1,6 +1,7 @@
-import { TextLintEngine } from "textlint";
+// import { TextLintEngine } from "textlint";
 import path from "path";
-import prh from "prh";
+
+const TextLintEngine = require("textlint").TextLintEngine;
 
 const options = {
   configFile: path.resolve("lib/textlint/.textlintrc"),
@@ -10,7 +11,6 @@ const options = {
 const engine = new TextLintEngine(options);
 
 const proofreadText = async (text: string) => {
-  console.log(prh);
   const results = await engine.executeOnText(text);
   return results[0].messages;
 };
