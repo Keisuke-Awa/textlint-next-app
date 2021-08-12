@@ -19,7 +19,7 @@ const Header = (): ReactElement => {
             α
           </Tag>
           <Tag variant="outline" colorScheme="white">
-            v 0.1.6
+            v 0.1.7
           </Tag>
         </Heading>
       </Box>

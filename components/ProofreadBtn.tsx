@@ -20,7 +20,8 @@ const ProofreadBtn = ({ targetText, setResultData }: Props): ReactElement => {
           setResultData({ messages: response.data.results });
         },
         (error) => {
-          console.log(error);
+          console.log(error.data);
+          console.log(error.data.message);
         }
       )
       .finally(() => {
