@@ -4,8 +4,8 @@ import path from "path";
 const options = {
   configFile: path.resolve("lib/textlint/.textlintrc"),
   rulePaths: [
-    "node_modules/textlint-rule-no-double-negative-ja",
-    "node_modules/textlint-rule-prh",
+    path.resolve("node_modules/textlint-rule-no-double-negative-ja"),
+    path.resolve("node_modules/textlint-rule-prh"),
   ],
 };
 
