@@ -12,6 +12,7 @@ const ProofreadBtn = ({ targetText, setResultData }: Props): ReactElement => {
 
   function checkText(text: string) {
     setIsLoading(true);
+    console.log("check");
     axios
       .post(`${process.env.API_ENDPOINT}/api/textlint`, { text: text })
       .then(

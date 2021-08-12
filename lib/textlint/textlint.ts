@@ -8,8 +8,13 @@ const proofreadText = async (text: string) => {
   };
 
   const engine = new TextLintEngine(options);
-  const results = await engine.executeOnText(text);
-  return results[0].messages;
+
+  try {
+    const results = await engine.executeOnText(text);
+    return results[0].messages;
+  } catch (e) {
+    throw new Error(e);
+  }
 };
 
 export { proofreadText };
