@@ -1,6 +1,5 @@
 {
     "rules": {
-      "textlint-rule-no-double-negative-ja": true,
       "textlint-rule-prh": {
         "rulePaths" :["./prh.yml"]
       }
