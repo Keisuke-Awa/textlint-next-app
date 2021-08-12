@@ -1,7 +1,9 @@
 import { TextLintEngine } from "textlint";
 import path from "path";
+
 const options = {
-  configFile: path.resolve("lib/textlint/.textlintrc"),
+  // configFile: path.resolve("lib/textlint/.textlintrc"),
+  rules: ["no-double-negative-ja"],
 };
 
 const engine = new TextLintEngine(options);
