@@ -2,8 +2,7 @@ import { TextLintEngine } from "textlint";
 import path from "path";
 
 const options = {
-  // configFile: path.resolve("lib/textlint/.textlintrc"),
-  rules: ["no-double-negative-ja"],
+  configFile: path.resolve("lib/textlint/.textlintrc"),
 };
 
 const engine = new TextLintEngine(options);
