@@ -14,10 +14,15 @@ const ProofreadBtn = ({ targetText, setResultData }: Props): ReactElement => {
     setIsLoading(true);
     axios
       .post(`${process.env.API_ENDPOINT}/api/textlint`, { text: text })
-      .then((response: any) => {
-        console.log(response.data.results);
-        setResultData({ messages: response.data.results });
-      })
+      .then(
+        (response: any) => {
+          console.log(response.data.results);
+          setResultData({ messages: response.data.results });
+        },
+        (error) => {
+          console.log(error);
+        }
+      )
       .finally(() => {
         setIsLoading(false);
       });
