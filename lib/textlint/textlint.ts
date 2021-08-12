@@ -3,10 +3,10 @@ import path from "path";
 
 const options = {
   configFile: path.resolve("lib/textlint/.textlintrc"),
-  rulePaths: [
-    path.resolve("node_modules/textlint-rule-no-double-negative-ja"),
-    path.resolve("node_modules/textlint-rule-prh"),
-  ],
+  // rulePaths: [
+  //   path.resolve("node_modules/textlint-rule-no-double-negative-ja"),
+  //   path.resolve("node_modules/textlint-rule-prh"),
+  // ],
 };
 
 const engine = new TextLintEngine(options);
