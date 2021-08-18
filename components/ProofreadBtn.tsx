@@ -13,8 +13,12 @@ const ProofreadBtn = ({ targetText, setResultData }: Props): ReactElement => {
   function checkText(text: string) {
     setIsLoading(true);
     console.log("check");
+    const headerConfig = {
+      headers: {"Access-Control-Allow-Origin": "*"}
+    }
     axios
-      .post(`${process.env.API_ENDPOINT}/api/textlint`, { text: text })
+      // .post(`${process.env.API_ENDPOINT}/api/textlint`, { text: text })
+      .post('https://us-central1-certain-gearbox-294306.cloudfunctions.net/textlint_api', { text: text }, headerConfig)
       .then(
         (response: any) => {
           console.log(response.data.results);
