@@ -2,6 +2,7 @@
     "rules": {
       "textlint-rule-prh": {
         "rulePaths" :["./prh.yml"]
-      }
+      },
+      "textlint-rule-ja-no-weak-phrase": true
     }
 }

@@ -3433,6 +3433,18 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+morpheme-match-all@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/morpheme-match-all/-/morpheme-match-all-2.0.5.tgz#d4a005f7b6da845664aced1b5892f1580cb5eedc"
+  integrity sha512-a6B6Nh4AhjMoEzVz8NOT5M9f3XwFVPM395gqnFNUXG/KTqQFTb9qM5JJFHJe+SvWfRVXTZSejyXNt+h+jmHUuQ==
+  dependencies:
+    morpheme-match "^2.0.4"
+
+morpheme-match@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/morpheme-match/-/morpheme-match-2.0.4.tgz#4ce77a4d6b51c0b33b3ca6d398363c42756b0c99"
+  integrity sha512-C3U5g2h47dpztGVePLA8w2O1aQEvuJORwIcahWaCG91YPrq+0u7qcPsF9Nqqe8noFvHwgO7b2EEk3iPnYuGTew==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4714,6 +4726,15 @@ textlint-rule-helper@^2.1.1:
     "@textlint/types" "^1.5.5"
     structured-source "^3.0.2"
     unist-util-visit "^1.1.0"
+
+textlint-rule-ja-no-weak-phrase@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/textlint-rule-ja-no-weak-phrase/-/textlint-rule-ja-no-weak-phrase-2.0.0.tgz#7e1fde8fa57113d6e79ef997b3f6a7712fe7f515"
+  integrity sha512-jZ1/3VnE8Bz/p0CCe/+BVOmWE1cZwpDkjKb6hnq39nGk3OD4XPW7biYavK/4/mZhk4bh2+Vtu1xV26lg8d+vBw==
+  dependencies:
+    kuromojin "^3.0.0"
+    morpheme-match "^2.0.4"
+    morpheme-match-all "^2.0.5"
 
 textlint-rule-no-double-negative-ja@^2.0.0:
   version "2.0.0"

@@ -36,6 +36,10 @@ rules:
       - harrdware
       - harddware
 
+  - expected: 美味しい
+    patterns:
+      - おいしい
+
   # # Allow to write `pattern` as RegExp
   # # Can use $1...$9
   # # Should wrap `/` and `/`
